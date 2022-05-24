@@ -28,13 +28,13 @@
           </div>
 
           <div class="col-auto">
-            <div class="avatar-container first-sec" data-bs-target="#profileOptions" data-bs-toggle="modal">
+            <div class="avatar-container" data-bs-target="#profileOptions" data-bs-toggle="modal">
               <img class="imagen" src="images/profile_pic.jpg" alt="DenisseMendoza">
               <i class="fas fa-cog icon-header"></i>
             </div>
           </div>
 
-          <div class="modal fade profile-options-modal" id="profileOptions" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade profile-options-modal" id="profileOptions" tabindex="-1"  aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
 
@@ -75,43 +75,47 @@
             <button type="button" class="btn btn-primary btn-block">Buscar</button>
           </form>
         </div>
+        
+        <div class="section-title">
+          <h2>Los mas pedidos</h2>
+        </div>
 
         <div class="products-list-container">
-          <ul>
-            <li>
+          <ul class="list-products">
+            <li class="products">
               <a href="#">
                 <div class="product-image">
-                  <img src="images/sushi-salmon.PNG" alt="">
+                  <img class="product-img" src="images/sushi-salmon.PNG" alt="">
                 </div>
                 <div class="product-info">
                   <div class="product-info-inner">
                     <div class="tags">
-                      <span>Descuento </span>
-                      <span>Envio gratis</span>
+                      <span class="offer">2x1 </span>
                     </div>
-                    <h3 class="product-name">Sushi</h3>
+                    <h3 class="product-name">Sushi de salmon</h3>
                     <p class="restaurant">Restaurante de Sushi</p>
                     <div class="stars">
+                      <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                     </div>
                   </div>
                 </div>
-                <p class="product-price"><span>$</span>74.99</p>
+                <p class="product-price">$74.99</p>
               </a>
             </li>
 
-            <li>
+            <li class="products">
               <a href="#">
                 <div class="product-image">
-                  <img src="images/sushi-pulpo.PNG" alt="">
+                  <img class="product-img" src="images/sushi-pulpo.PNG" alt="">
                 </div>
                 <div class="product-info">
                   <div class="product-info-inner">
                     <div class="tags">
-                      <span>Descuento </span>
-                      <span>Envio gratis</span>
+                      <span class="offer">2x1 </span>
+                      <span class="offer">Envio gratis</span>
                     </div>
                     <h3 class="product-name">Sushi de pulpo</h3>
                     <p class="restaurant">Restaurante de Sushi</p>
@@ -122,20 +126,21 @@
                     </div>
                   </div>
                 </div>
-                <p class="product-price"><span>$</span>64.99</p>
+                <p class="product-price">$64.99</p>
               </a>
             </li>
 
-            <li>
+            <li class="products">
               <a href="#">
                 <div class="product-image">
-                  <img src="images/sushi-kit-atun.PNG" alt="">
+                  <img class="product-img" src="images/sushi-kit-atun.PNG" alt="">
                 </div>
                 <div class="product-info">
                   <div class="product-info-inner">
                     <div class="tags">
-                      <span>Descuento </span>
-                      <span>Envio gratis</span>
+                      <span class="offer">Descuento 10% </span>
+                      <span class="offer">3x2 </span>
+                      <span class="offer">Envio gratis</span>
                     </div>
                     <h3 class="product-name">Sushi kit atun</h3>
                     <p class="restaurant">Restaurante de Sushi</p>
@@ -143,23 +148,24 @@
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
                     </div>
                   </div>
                 </div>
-                <p class="product-price"><span>$</span>104.99</p>
+                <p class="product-price">$104.99</p>
               </a>
             </li>
 
-            <li>
+            <li class="products">
               <a href="#">
                 <div class="product-image">
-                  <img src="images/sushi-kit-salmon.PNG" alt="">
+                  <img class="product-img" src="images/sushi-kit-salmon.PNG" alt="">
                 </div>
                 <div class="product-info">
                   <div class="product-info-inner">
                     <div class="tags">
-                      <span>Descuento </span>
-                      <span>Envio gratis</span>
+                      <span class="offer">Envio gratis</span>
                     </div>
                     <h3 class="product-name">Sushi kit salmon</h3>
                     <p class="restaurant">Restaurante de Sushi</p>
@@ -170,20 +176,20 @@
                     </div>
                   </div>
                 </div>
-                <p class="product-price"><span>$</span>129.99</p>
+                <p class="product-price">$129.99</p>
               </a>
             </li>
 
-            <li>
+            <li class="products">
               <a href="#">
                 <div class="product-image">
-                  <img src="images/sushi-kit-one.PNG" alt="">
+                  <img class="product-img" src="images/sushi-kit-one.PNG" alt="">
                 </div>
                 <div class="product-info">
                   <div class="product-info-inner">
                     <div class="tags">
-                      <span>Descuento </span>
-                      <span>Envio gratis</span>
+                      <span class="offer">Descuento 50%</span>
+                      <span class="offer">Envio gratis</span>
                     </div>
                     <h3 class="product-name">Sushi kit mixto</h3>
                     <p class="restaurant">Restaurante de Sushi</p>
@@ -191,14 +197,22 @@
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
                     </div>
                   </div>
                 </div>
-                <p class="product-price"><span>$</span>189.99</p>
+                <p class="product-price">$189.99</p>
               </a>
             </li>
 
           </ul>
+          <div class="pt-4 b-5 text-center">
+            <a href="#" class="btn btn-block btn-link">
+              <span class="d-block mb">Ver mas productos</span>
+              <i class="fas fa-arrow-down"></i>
+            </a>
+          </div>
         </div>
       </div>
     </main>

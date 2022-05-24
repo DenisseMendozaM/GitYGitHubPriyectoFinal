@@ -23,7 +23,7 @@ img{
   max-width: 100%;
 }
 
-a{
+a, .btn-link{
   text-decoration: none;
 }
 
@@ -33,10 +33,14 @@ header{
   background-color: #2b4c5b;
   padding: 10px 0;
   box-shadow: 0 5px 10px #20353f;
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
  ul {
-  background-color: #20353f;
   padding: 10px 0;
 }
 
@@ -85,8 +89,8 @@ header{
 
 a{
   display: block;
-padding: 10px 0;
-color: #9f7cac;
+  padding: 10px 0;
+  color: #9f7cac;
 }
 
 .icon-list{
@@ -96,42 +100,136 @@ color: #9f7cac;
   margin-right: 5px;
 }
 
-.info-text {
-  font-size: 25px;
-  font-weight: 300;
-  color: #9f7cac;
+/*Body*/
+
+.main{
+  padding-top: 10px;
 }
 
-.tittle-list{
-  font-size: 30px;
+.section-title{ 
+  color: #ffffff;
+  font-stretch: expanded;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0 10px;
+  position: relative;
+  padding-bottom: 20px;
+  text-shadow: 5px 5px 2px #9f7cac;
+}
+
+.section-title::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #2b4c5b;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+input{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #824147;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #824147;
+}
+
+.btn.btn-primary{
+  width: 100%;
   font-weight: 500;
-  color: #9f7cac;
+  background: #9f7cac;
+  border-color: #9f7cac;
+  padding-bottom: 10px;
 }
 
-.ocup-subtitle{
-  font-size: 40px;
-  font-weight: 400;
-  color: #8b444a;
+.products-list-container{
+  padding-top: 15px;
 }
 
-.info-title{
-  font-family: 'Red Rose', cursive;
-  font-size: 45px;
-  margin: inherit;
-  font-weight: 500;
-  color: #1a1420;
+.list-products{
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.name-title{
-  font-family: 'Red Rose', cursive;
-  font-size: 70px;
-  font-weight: 500;
-  color: #1a1420;
-} 
+.products{
+  border: 1px solid #824147;
+  box-shadow: 0px 5px 10px #824147;
+  background: #20353f;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+}
 
 .imagen{
   border-radius: 53px;
   opacity: 100% !important;
+}
+
+.product-img{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.tags{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: initial;
+  top: -10px;
+  left: 50%;
+  width: 100%;
+}
+
+span{
+  display: block;
+  border-radius: 10px;
+  margin-right: 7px;
+  font-size: 12px;
+  padding: 2px 10px;
+  font-weight: 400;
+  background: #9f7cac;
+  color: #ffffff  !important;
+}
+
+.offer:last-child{
+  margin-right: 0;
+}
+
+.product-name{
+  font-weight: 300;
+  font-size: 30px;
+  color:#c394d4
+}
+
+.restaurant{
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #2b4c5b;
+  font-weight: 600;
+}
+
+.stars{
+  margin-top: 5px;
+  color: #345f80;
+  font-size: 18px;
+}
+
+.product-price{
+  font-size: 18px;
+  margin: 0;
+  font-weight: 300;
+  color: #9f7cac;
 }
 
 .first-box{
