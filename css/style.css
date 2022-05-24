@@ -1,3 +1,6 @@
+
+@import './bootsrap/bootstrap.css';
+
 .background-pixel {
     background-image: url(../images/background.front.jpg);
 }
@@ -13,7 +16,84 @@ span {
 }
 
 body{
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Red Rose', cursive;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*Header*/
+
+header{
+  background-color: #2b4c5b;
+  padding: 10px 0;
+  box-shadow: 0 5px 10px #20353f;
+}
+
+ ul {
+  background-color: #20353f;
+  padding: 10px 0;
+}
+
+ .title-header {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #9f7cac;
+}
+
+.avatar-container{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  cursor: pointer;
+}
+
+.imagen{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.icon-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  color: #9f7cac;
+}
+
+.profile-options-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.modal-header{
+  background-color: #9f7cac;
+}
+
+.modal-body{
+  background-color: #20353f;
+}
+
+a{
+  display: block;
+padding: 10px 0;
+color: #9f7cac;
+}
+
+.icon-list{
+  display: inline-block;
+  width: 18px;
+  text-align: center;
+  margin-right: 5px;
 }
 
 .info-text {
@@ -25,7 +105,7 @@ body{
 .tittle-list{
   font-size: 30px;
   font-weight: 500;
-  color: #824147;
+  color: #9f7cac;
 }
 
 .ocup-subtitle{
@@ -35,7 +115,7 @@ body{
 }
 
 .info-title{
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Red Rose', cursive;
   font-size: 45px;
   margin: inherit;
   font-weight: 500;
@@ -43,17 +123,11 @@ body{
 }
 
 .name-title{
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Red Rose', cursive;
   font-size: 70px;
   font-weight: 500;
   color: #1a1420;
 } 
-
-.first-sec{
-  width: 850px;
-  padding-left: auto;
-  padding-right: auto;
-}
 
 .imagen{
   border-radius: 53px;
